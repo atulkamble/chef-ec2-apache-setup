@@ -114,18 +114,20 @@ SSH into EC2:
 
 ```bash
 ssh -i my-key.pem ec2-user@<ec2-public-ip>
+ssh -i "docker.pem" ec2-user@44.203.91.181
 ```
 
 Copy cookbook:
 
 ```bash
 scp -i my-key.pem -r cookbooks/apache-install ec2-user@<ec2-public-ip>:/home/ec2-user/
+scp -i docker.pem -r cookbooks/apache-install ec2-user@44.203.91.181:/home/ec2-user/
 ```
 
 Run Chef Client in local mode:
 
 ```bash
-sudo chef-client --local-mode --runlist 'recipe[apache-install]'
+sudo chef-client --local-mode --runlist 'recipes[apache-install]'
 ```
 
 ---

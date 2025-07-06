@@ -1,7 +1,3 @@
-Excellent request, Atul — let’s build a clean **Chef + EC2 project** where we'll provision an EC2 instance on AWS, install Chef on it, and use a simple Chef cookbook to configure the instance (for example, install Apache and deploy a test page).
-
----
-
 ## 📦 Project: **Chef-Provisioned EC2 Apache Server**
 
 ---
